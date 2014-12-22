@@ -8,6 +8,7 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 
 # config
+CASPERJS_VERSION="1.1-beta3"
 PHANTONJS_VERSION="1.9.8"
 
 # Buildpack URL
@@ -29,7 +30,7 @@ mv $CACHE_DIR/$ARCHIVE_NAME $BUILD_DIR/vendor/phantomjs
 
 echo "-----> Cloning CasperJS"
 cd ${BUILD_DIR}/vendor
-git clone git://github.com/n1k0/casperjs.git
+git clone -b $CASPERJS_VERSION git://github.com/n1k0/casperjs.git
 
 echo "-----> Installing .profile.d/casperjs.sh"
 cd ${BUILD_DIR}
