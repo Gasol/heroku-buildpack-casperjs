@@ -25,10 +25,10 @@ Running `bash` attached to terminal... up, run.2587
 Add phantomjs/casperjs paths ...
 
 $ phantomjs --version
-1.9.2
+1.9.8
 
 $ casperjs --version
-1.1.0-DEV
+1.1.0-beta3
 ```
 
 ---
